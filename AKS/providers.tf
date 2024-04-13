@@ -21,10 +21,10 @@ terraform {
   }
   backend "remote" {
 		hostname = "app.terraform.io"
-		organization = "CloudQuickLabs"
+		organization = "hachiai-project"
 
 		workspaces {
-			name = "AzureAKSLabs"
+			name = "Azure_AKS_Labs"
 		}
 	}
 }
