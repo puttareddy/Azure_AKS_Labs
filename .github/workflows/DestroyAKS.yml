@@ -1,4 +1,4 @@
-name: Create Azure AKS With Terraform
+name: Destroy Azure AKS With Terraform
 on:
   workflow_dispatch:
 
