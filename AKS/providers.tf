@@ -21,7 +21,7 @@ terraform {
   }
   backend "remote" {
 		hostname = "app.terraform.io"
-		organization = "hachiai-project"
+		organization = "hachiai"
 
 		workspaces {
 			name = "Azure_AKS_Labs"
