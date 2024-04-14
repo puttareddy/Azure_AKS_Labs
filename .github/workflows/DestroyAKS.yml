@@ -12,7 +12,7 @@ jobs:
       run:
         shell: bash
         working-directory: AKS
-        
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3.1.0
@@ -48,7 +48,7 @@ jobs:
         run: exit 1
 
       - name: Destroy Application
-       run: |
+        run: |
          az aks get-credentials -n "cluster-bursting-jennet" -g "rg-refined-swine"
          kubectl delete -f ./AKSApp/aks-store-quickstart.yaml
          sleep 40

@@ -9,7 +9,7 @@ jobs:
   AKS-Cluster-Deployment:
     runs-on: ubuntu-latest
     defaults:
-      run: |
+      run: 
         shell: bash
         working-directory: AKS
     steps:
@@ -53,7 +53,7 @@ jobs:
         run: terraform output
 
       - name: Deploy Application
-       run: |
+        run: |
          az aks get-credentials -n "cluster-bursting-jennet" -g "rg-refined-swine"
          kubectl apply -f ./AKSApp/aks-store-quickstart.yaml
          sleep 40
