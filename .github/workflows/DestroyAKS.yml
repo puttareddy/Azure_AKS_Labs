@@ -46,7 +46,7 @@ jobs:
 
       - name: Destroy Application
         run: |
-         az aks get-credentials -n "cluster-bursting-jennet" -g "rg-refined-swine"
+         az aks get-credentials -n "cluster-unique-duckling" -g "rg-learning-garfish"
          kubectl delete -f ./AKSApp/aks-store-quickstart.yaml
          sleep 40
          rm -rf ~/.kube
